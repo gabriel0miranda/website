@@ -5,9 +5,9 @@
 <h1>Que bom que está aqui.</h1>
 <p>Sente-se, pegue uma bebida e leia algum dos meus posts.</p>
 <ul class="lista-de-posts">
-  <% for i, post in ipairs(posts) do %>
+  <% for i, name in pairs(posts) do %>
     <li>
-      <%= post %>
+      <% element("a", { href = url_for('posts',{post = name}) }, name) %>
     </li>
   <% end %>
 </ul>

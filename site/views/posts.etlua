@@ -1,2 +1,3 @@
-<% render(params.post) %>
+<!-- views/posts.etlua -->
+<% render("views.posts."..params.post) %>
 

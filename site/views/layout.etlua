@@ -39,13 +39,13 @@
     </head>
     <body>
         <div id="title-image">
-            <img src="static/moon.png" alt="Magus da Lua" width="260" height="271">
+            <img src="<%= url_for('statics',{image = "moon.png"})%>" alt="Magus da Lua" width="260" height="271">
         </div>
         <div id="page-container">
             <header>
                 <h2>Magus da Lua</h2>
                 <p><i>"Os terrenos não básicos são Montanhas."</i></p>
-                <hr class="header-line" align="left" width="81%">
+                <hr class="header-line" align="left" width="80%">
             </header>
             <div id="content">
                 <% content_for("inner") %>

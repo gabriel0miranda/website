@@ -1,4 +1,7 @@
-<!-- views/index.etlua -->
+<!-- views/posts/gatos.etlua -->
+<style>
+    li {color: #F39833}
+</style>
 <h1>Sobre Meus Gatos</h1>
 <p>Atualmente tenho três(3) gatos. Os nomes deles são:
 <ul class="gatos">
