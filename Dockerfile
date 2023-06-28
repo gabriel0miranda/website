@@ -1,9 +1,9 @@
 FROM openresty/openresty:1.21.4.1-8-alpine-fat
 
-# Add the configuration file
-COPY . .
-
 RUN luarocks --lua-version=5.1 OPENSSL_DIR=/usr/local/openresty/openssl/ CRYPTO_DIR=/usr/local/openresty/openssl/ install lapis
+
+# Add files
+COPY . .
 
 RUN mkdir /var/log/nginx && \
     rm /etc/nginx/conf.d/default.conf && \

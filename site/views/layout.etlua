@@ -1,0 +1,35 @@
+<!-- views/layout.etlua -->
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title><%= page_title %></title>
+        <style>
+            body {background-color: #E59B5A;}
+            
+            footer {
+              position: absolute;
+              bottom: 0;
+              width: 100%;
+              height: 50px;
+            }
+            h {color: #3E3B3F}
+            p {color: #3F3E3B}
+        </style>
+    </head>
+    <body>
+        <header>
+            <h2>Bem vindo ao Magus da Lua</h2>
+            <em>"Os terrenos não básicos são Montanhas."</em>
+            <hr>
+        </header>
+        <div id="content">
+            <% content_for("inner") %>
+        </div>
+        <footer>
+            <hr>
+            <p> Feito por Gabriel Silva Miranda<br>
+            <a href="gabrielcatitu@hotmail.com">gabrielcatitu@hotmail.com</a></p>
+        </footer>
+    </body>
+</html>
