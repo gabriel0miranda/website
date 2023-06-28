@@ -1,0 +1,9 @@
+<!-- views/index.etlua -->
+<h1>Sobre Meus Gatos</h1>
+<p>Atualmente tenho três(3) gatos. Os nomes deles são:
+<ul class="gatos">
+<% for i, item in ipairs(gatos) do %>
+  <li><%= item %></li>
+<% end %>
+</ul>
+</p>

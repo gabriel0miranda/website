@@ -1,35 +1,60 @@
 <!-- views/layout.etlua -->
 <!DOCTYPE HTML>
-<html lang="en">
+<html lang="pt">
     <head>
         <meta charset="UTF-8">
         <title><%= page_title %></title>
         <style>
-            body {background-color: #E59B5A;}
-            
+            body {background-color: #000000; font-family: "Cantarell", sans-serif}
+
+            #page-container {
+                position: relative;
+                min-height: 100vh;
+            }
+
+            #content {
+                padding-bottom: 50px;
+            }
+
+            #title-image {
+                position: absolute;
+                right: 0px;
+                top: 0px;
+                opacity: 0.4;
+            }
+
             footer {
               position: absolute;
               bottom: 0;
               width: 100%;
               height: 50px;
             }
-            h {color: #3E3B3F}
-            p {color: #3F3E3B}
+
+            h2 {color: #CD303A;}
+            h1 {color: #CD303A}
+            p {color: #F39833}
+            em {color: #F39833}
+            a {color: #F39833}
         </style>
     </head>
     <body>
-        <header>
-            <h2>Bem vindo ao Magus da Lua</h2>
-            <em>"Os terrenos não básicos são Montanhas."</em>
-            <hr>
-        </header>
-        <div id="content">
-            <% content_for("inner") %>
+        <div id="title-image">
+            <img src="static/moon.png" alt="Magus da Lua" width="260" height="271">
         </div>
-        <footer>
-            <hr>
-            <p> Feito por Gabriel Silva Miranda<br>
-            <a href="gabrielcatitu@hotmail.com">gabrielcatitu@hotmail.com</a></p>
-        </footer>
+        <div id="page-container">
+            <header>
+                <h2>Magus da Lua</h2>
+                <p><i>"Os terrenos não básicos são Montanhas."</i></p>
+                <hr class="header-line" align="left" width="81%">
+            </header>
+            <div id="content">
+                <% content_for("inner") %>
+            </div>
+            <footer>
+                <hr>
+                <p> Feito por Gabriel Silva Miranda<br>
+                <a href="gabrielcatitu@hotmail.com">gabrielcatitu@hotmail.com</a></p>
+            </footer>
+        </div>
     </body>
 </html>

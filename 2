@@ -1,12 +1,9 @@
 <!-- views/index.etlua -->
-<style>
-    li {color: #F39833}
-</style>
 <h1>Que bom que está aqui.</h1>
 <p>Sente-se, pegue uma bebida e leia algum dos meus posts.</p>
 <ul class="lista-de-posts">
   <% for i, post in ipairs(posts) do %>
-    <li>
+    <li style: "color=#F39833">
       <%= post %>
     </li>
   <% end %>
