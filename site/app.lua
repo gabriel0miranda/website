@@ -26,7 +26,7 @@ end)
 
 app:match("posts", "/posts/:post", function(self) 
     self.page_title = "Magus"
-    self.gatos = {"Abraham", "Ob Nixilis", "Lutgarden"}
+    self.gatos = {"Abraham", "Ob Nixilis", "Lutgarden", "Padre Agostinho"}
     return {render = "posts"}
 end)
 
