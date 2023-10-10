@@ -7,27 +7,27 @@ app:enable("etlua")
 app.layout = require "views.layout"
 
 app:get("/", function(self)
-    self.page_title = "Magus"
+    self.page_title = "A Torre"
     local popen, i = io.popen, 0
-    self.posts = {}
-    local pfile = popen('ls "'..directory..'/views/posts" | grep -v / | cut -d"." -f1')
+    self.lugares = {}
+    local pfile = popen('ls "'..directory..'/views/lugares" | grep -v / | cut -d"." -f1')
     for filename in pfile:lines() do
         i = i+1
-        self.posts[i] = filename
+        self.lugares[i] = filename
     end
     pfile:close()
     return { render = "index"}
 end)
 
 app:match("statics", "/static/:image", function(self) 
-    self.page_title = "Magus"
+    self.page_title = "A Torre"
     return {self.params.image}
 end)
 
-app:match("posts", "/posts/:post", function(self) 
-    self.page_title = "Magus"
+app:match("lugares", "/lugares/:lugar", function(self) 
+    self.page_title = "A Torre"
     self.gatos = {"Abraham", "Ob Nixilis", "Lutgarden", "Padre Agostinho"}
-    return {render = "posts"}
+    return {render = "lugares"}
 end)
 
 return app

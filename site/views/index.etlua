@@ -1,13 +1,15 @@
 <!-- views/index.etlua -->
 <style>
-    li {color: #F39833}
+    ul {color: #F39833}
 </style>
-<h1>Que bom que está aqui.</h1>
-<p>Sente-se, pegue uma bebida e leia algum dos meus posts.</p>
-<ul class="lista-de-posts">
-  <% for i, name in pairs(posts) do %>
-    <li>
-      <% element("a", { href = url_for('posts',{post = name}) }, name) %>
-    </li>
+<h1>Bem vindo a minha torre virtual!</h1>
+<p>Eu sou o Gabriel e fiz esse site para colocar um pedaço da minha mente que não consigo acessar tão facilmente no mundo real. Como gosto da temática de fantasia mágica, esse site foi construído para se assemelhar à torre de um mago. Isso significa que as vezes as coisas podem se comportar de maneira atípica, mas não se preocupe, são apenas feitiços virtuais</p>
+<p>Sinta-se livre para explorar A Torre. A porta abaixo te levará onde você quiser...</p>
+<form>
+<select name="A Porta">
+  <% for i, name in pairs(lugares) do %>
+    <% element("option", { value = url_for('lugares',{lugar = name}) }, name) %>
   <% end %>
-</ul>
+</select>
+<button type="submit">Abrir</button>
+</form>

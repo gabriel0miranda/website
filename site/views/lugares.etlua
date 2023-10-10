@@ -1,0 +1,3 @@
+<!-- views/lugares.etlua -->
+<% render("views.lugares."..params.lugar) %>
+
