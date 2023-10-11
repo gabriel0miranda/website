@@ -1,5 +1,23 @@
 body {
 	margin: auto;
 	width: 80%;
-	font-family: Arial, sans-serif;
+    background-color: #3E3E3E;
+}
+
+.banner {
+    height: 100px;
+    width: 80%;
+    padding-left: 10%;
+    padding-right: 10%;
+    background-image: url("hermes.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.topnav {
+    background-color: #69534A;
+    align: center;
+    padding-left: 20%;
+    padding-right: 20%;
 }

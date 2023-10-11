@@ -1,113 +1,21 @@
 
 <p><html>
 <head>
-<link rel="stylesheet" type="text/css" href="static/style.css">
-<title>  Welcome! </title>
+<link rel="stylesheet" type="text/css" href="./static/style.css">
+<link rel="icon" type="image/png" href="/static/favicon.ico">
+<title> A Torre </title>
 <body></p>
 
-<h1>Welcome!</h1>
-<p>This is where you can write the content for your front page.</p>
 
-<p>The text here will be formatted according to markdown syntax and inserted into
-a template, which you can find at <code>/templates/_default.html</code>.</p>
-
-<h3>Templates</h3>
-<p>If there is a template with the same name as the <code>.md</code> file in the <code>content</code>
-directory, then that template will be used to render that content.</p>
-
-<p>If your content <code>.md</code> file is in a subdirectory of the <code>content</code> directory,
-SimpleSites will look for a subdirectory with the same name in the <code>templates</code>
-directory. If it finds one, it will look for a template there with the same
-name as the content <code>.md</code> file. If there isn't one, it'll look for a
-<code>_default.html</code> file in that subdirectory. If it finds neither, it'll look in
-the directory above.</p>
-
-<p>You can use this to have specific templates for different pages or different
-sections of your site. For instance, you could have a <code>content/posts</code> directory
-conaining blog posts, and a <code>templates/posts/_default.html</code> template which would
-be applied to them.</p>
-
-<p>If no other matching template is found, it'll use <code>templates/_default.html</code>.</p>
-
-<h3>Code blocks</h3>
-<p>Double curly brackets in the template file can contain Lua code which will be
-run. eg. <code>{ { "hello, " .. NAME .. "!" } }</code> (with no spaces between
-the brackets) will be evaluated before it's inserted into the template. Don't
-put code blocks in your content <code>.md</code> files, it causes horrible, subtle and
-intermittent bugs.</p>
-
-<p>One HTML page is rendered for every <code>.md</code> file in the <code>content</code> directory and
-its subdirectories. Within whichever template is chosen to render the <code>.md</code>
-file, the <code>.md</code> file is available inside code blocks as <code>content.auto</code>.</p>
-
-<p>The text of the <code>.md</code> file is <code>content.auto.text</code>. <code>content.auto</code> has a few
-other useful fields, like <code>content.auto.modified_time</code> or <code>content.auto.title</code>
-(which is guessed either from the first #markdown header or else from the 
-filename). Read the code to see all available fields, it should be Simple
-enough.</p>
-
-<p>Code blocks are evaluated and templates merged before markdown is parsed into
-HTML. This means that you can include markdown in your templates, but you
-shouldn't indent any HTML in your templates or it'll be treated as a code block.</p>
-
-<h3>Styling</h3>
-<p>To change the style of your site, edit <code>static/style.css</code>.</p>
-
-<h2>Markdown</h2>
-<p>You can use <a href="https://en.wikipedia.org/wiki/Markdown">Markdown</a> to add formatting.
-Look at the difference between <code>index.md</code> and <code>index.html</code> to see how markdown
-renders into HTML.</p>
-
-<p>Here's a quick overview of markdown:</p>
-
-<h1>Headers start with a "#"</h1>
-
-<h2>Subheadings start with multiple "#"s</h2>
-
-<p>Leave one empty line to start a new paragraph, otherwise lines will run
-together.</p>
-
-<p>This is <em>italicised</em>, so is <em>this</em>.
-<strong>This</strong> will be bold, so will <strong>this</strong>.
-These will all be part of the same paragraph.</p>
-
-<p>->This text will be centred.&lt;-</p>
-
-<p><a href="www.example.com">This</a> will be a link to example.com
-So will <a href="www.example.com" title="On hover, this text will be displayed!">this</a>. Look at the bottom of the markdown to see the
-footnote-style link it references.</p>
-
-<p>Images are very similar, but prefixed with a !
-<img src="static/image.png" alt="My image text"/>
-You can use inline <em>or</em> reference style.</p>
-
-<blockquote>
-    <p>This will be displayed in 
-    blockquote style.</p>
-</blockquote>
+<div class="banner">
+</div>
 
 
-<pre><code>This will be displayed in 'code' style, ie. with the exact formatting
-written here and displayed in a monospace font.
-That's because it's been indented by 1 tab.
-You can also start a code block by indenting 4 spaces.
-</code></pre>
 
-<p><code>This is an inline code block. It's between backticks (not 'single quotes').</code></p>
-
-<ul>
-    <li><p>This</p></li>
-    <li><p>Is</p></li>
-    <li><p>A </p></li>
-    <li><p>Bullet</p></li>
-    <li><p>List</p></li>
-    <li><p>This is a </p></li>
-    <li><p>Numbered list</p></li>
-</ul>
-
-<h3>HTML</h3>
-<p>You can use regular <abbr title="Hypertext Markup Language">HTML</abbr> in
-markup wherever you like.</p>
+<div class="topnav">
+    <h3>A Torre</h3>
+    <p><i>"Quando a derrota está próxima e as orientações são escassas, todos os olhos miram uma direção."</i></p>
+</div>
 
 
 
