@@ -1,23 +1,105 @@
+html {
+    font-family: "Liberation Sans", Arial, sans-serif;
+}
+
 body {
 	margin: auto;
-	width: 80%;
+	width: 90%;
     background-color: #182D26;
 }
 
+
+.minibanner {
+    img {
+        width: 200px;
+        height: 216px;
+    }
+    position: absolute;
+    right: 5%;
+    height: 216px;
+    width: 200px;
+    background-color: #d1a81e;
+    border: 3px solid #68540f;
+}
+
 .banner {
-    height: 100px;
-    width: 80%;
-    padding-left: 10%;
+    position: absolute;
+    right: 5%;
+    height: 500px;
+    width: 200px;
+    --padding-left: 80%;
     padding-right: 10%;
-    background-image: url("hermes.jpg");
+    background-image: url("wizard.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    border: 3px solid #68540f;
 }
 
-.topnav {
-    background-color: #69534A;
-    align: center;
-    padding-left: 20%;
-    padding-right: 20%;
+.topbar {
+    color: #D3CEC9;
+    background-color: #68540f;
+    text-align: left;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 30%;
+}
+
+.subtopbar {
+    color: #D3CEC9;
+    background-color: #68540f;
+    text-align: left;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 30%;
+}
+
+.subcontent {
+    color: #2F2524;
+    background-color: #d1a81e;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 35%;
+    height: 100%;
+    border: 5px solid #68540f;
+}
+
+.content {
+    color: #2F2524;
+    background-color: #d1a81e;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 35%;
+    height: 100%;
+    border: 5px solid #68540f;
+}
+
+.nav {
+    li {
+        display: inline;
+        padding: 30px;
+    }
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    img {
+        width: 85px;
+        height: 130px;
+    }
+}
+
+.footer {
+    color: #D3CEC9;
+    background-color: #68540f;
+    text-align: left;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 30%;
 }
