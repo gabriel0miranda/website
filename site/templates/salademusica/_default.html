@@ -7,20 +7,20 @@
 {{
 	-- Sort posts by file creation time
 	local times = {}
-	for name, post in pairs(content.oficina.posts) do
+	for name, post in pairs(content.salademusica.posts) do
 		table.insert(times, name)
 	end
 	table.sort(times, function(a, b)
-		return content.oficina.posts[a].accessed_time > content.oficina.posts[b].accessed_time
+		return content.salademusica.posts[a].accessed_time > content.salademusica.posts[b].accessed_time
 	end)
 	
 	local output = ""
 	for _, name in pairs(times) do
 		
-		local post = content.oficina.posts[name]
+		local post = content.salademusica.posts[name]
 		
 	-- ### [<POST TITLE>](<URL>)\n<POST TEXT FOLLOWING POST TITLE UP TO 144 CHARS>
-		output = output .. "## ["..post.title.."](./oficina/posts/"..name..".html)\n\n"
+		output = output .. "## ["..post.title.."](./salademusica/posts/"..name..".html)\n"..post.text:match("#.-\n(.*)"):sub(1, 256).."\n\n"
 		
 	end
 	
