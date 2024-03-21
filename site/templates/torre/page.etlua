@@ -1,0 +1,13 @@
+<div class="content">
+    <%- page.content %>
+
+    <div class="nav">
+        <p>Escolha uma porta para ser teletransportado pelos fios até outra parte do site.</p>
+        <ul>
+            <li><a href="escrivaninha/", title="Escrivaninha"><img src="/inc/static/door.png" alt="Porta"></a></li>
+            <li><a href="oficina/", title="Oficina"><img src="/inc/static/door.png" alt="Porta"></a></li>
+            <li><a href="saladearte/", title="Sala de Arte"><img src="/inc/static/door.png" alt="Porta"></a></li>
+            <li><a href="salademusica/", title="Sala de Música"><img src="/inc/static/door.png" alt="Porta"></a></li>
+        </ul>
+    </div>
+</div>

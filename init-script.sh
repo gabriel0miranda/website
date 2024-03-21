@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo -en "Initializing website." && \
-simplesites site/ 1> /dev/null && \
+cd site && luapress && cd ../ 1> /dev/null && \
 echo -en "." && \
 docker build -t website:2.0.0 . 1> /dev/null && \
 echo "." && \
