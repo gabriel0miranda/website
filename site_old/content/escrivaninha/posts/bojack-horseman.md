@@ -1,3 +1,0 @@
-# Sobre Bojack Horseman
-
-

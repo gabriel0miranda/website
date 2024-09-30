@@ -1,13 +1,13 @@
 FROM nginx
 
 # Add files
-COPY ./site/public/ /etc/nginx/html/
+COPY ./site/build/ /usr/share/nginx/html
 
 RUN rm /etc/nginx/conf.d/default.conf
 
 COPY ./conf/default.conf /etc/nginx/conf.d/default.conf
-COPY ./conf/nginx.conf /etc/nginx/nginx.conf
+#COPY ./conf/nginx.conf /etc/nginx/nginx.conf
 
-WORKDIR /etc/nginx/html
+WORKDIR /usr/share/nginx/html
 
 EXPOSE 8080
