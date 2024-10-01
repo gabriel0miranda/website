@@ -1,7 +1,7 @@
 FROM nginx
 
 # Add files
-COPY ./site/build/ /usr/share/nginx/html
+COPY ./site/public/ /usr/share/nginx/html
 
 RUN rm /etc/nginx/conf.d/default.conf
 

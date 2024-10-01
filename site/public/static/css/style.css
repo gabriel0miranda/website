@@ -1,0 +1,151 @@
+@font-face {
+    font-family: Venice;
+    src:url("./fonts/venice.ttf");
+}
+
+* {
+    margin: 0px;
+    padding:0px;
+    font-family:"Venice";
+    font-size: 28;
+    font-weight: 250;
+    color:#0f1a12;
+}
+
+{
+  scrollbar-width: thin;
+  scrollbar-color: transparent;
+}
+
+body {
+    background-color: transparent;
+    color: #0f1a12;
+    background-image: url(/static/wall_06.gif);
+    text-align: center;
+}
+
+.cabecalho {
+    text-align: center;
+    padding: 10px;
+    border-bottom: 0px solid #192b1e;
+    margin-top: 18px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 15px;
+}
+
+.titulo h1{
+    font-size: 40;
+    text-shadow: 0px 4px 10px rgba(179,147,211,0.8);
+    font-weight: 400;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.fakelogin {
+    margin-left: 35px;
+    margin-right: 35px;
+    margin-top: 85px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #EAEEEC;
+    border: 2px solid black;
+}
+
+.fakelogin input[type="text"] {
+    border: none;
+    background-color: #EAEEEC;
+    padding: 5px;
+
+}
+
+.fakelogin input[type="password"] {
+    border: none;
+    background-color: #EAEEEC;
+
+}
+
+.fakelogin button {
+    border: none;
+    background-color: #EAEEEC;
+    padding:5px;
+
+}
+
+.facekolong textarea:focus, input:focus{
+    outline: none;
+}
+
+.boasvindas p{
+    padding: 5px;
+}
+
+.outer-outer-circle {
+    margin-top: 20px;
+    text-align: center;
+    background-color: transparent;
+    display: inline-block;
+    width: 370px;
+    height: 370px;
+    border-radius: 50%;
+    background-image: conic-gradient(
+        #F2E750 135deg,
+        transparent 0 225deg,
+        #F2E750 0
+    );
+}
+
+.outer-circle {
+    margin-top: 5px;
+    text-align: center;
+    background-color: transparent;
+    display: inline-block;
+    width: 360px;
+    height: 360px;
+    border-radius: 50%;
+    background-image: conic-gradient(
+        #ffc100 135deg,
+        transparent 0 225deg,
+        #ffc100 0
+    );
+}
+
+.inner-circle {
+    margin-top: 20px;
+    text-align: center;
+    height: 320px;
+    width: 320px;
+    background-color: #f2e750;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.inner-line {
+    margin-top: 8px;
+    text-align: center;
+    height: 300px;
+    width: 300px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: inline-block;
+    border: 2px solid #ffffff
+}
+
+.inner-inner-circle {
+    padding-top: 1px;
+    height: 299px;
+    width: 299px;
+    background-color: #ffd144;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+footer {
+    text-align: left;
+    margin-top: 105px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-right: 30%;
+}
