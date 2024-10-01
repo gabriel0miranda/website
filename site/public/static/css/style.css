@@ -1,15 +1,35 @@
 @font-face {
+    font-family: LinuxLibertine;
+    src:url("./fonts/LinLibertine_RI.ttf");
+}
+
+@font-face {
+    font-family: Chintzy;
+    src:url("./fonts/chintzy.ttf");
+}
+
+@font-face {
     font-family: Venice;
     src:url("./fonts/venice.ttf");
+}
+
+@font-face {
+    font-family: Knightorns;
+    src:url("./fonts/knightorns.ttf");
+}
+
+@font-face {
+    font-family: BiteAndSlash;
+    src:url("./fonts/biteandslash.ttf");
 }
 
 * {
     margin: 0px;
     padding:0px;
-    font-family:"Venice";
-    font-size: 28;
+    font-family:"LinuxLibertine";
+    font-size: 15px;
     font-weight: 250;
-    color:#0f1a12;
+    color:#7af683;
 }
 
 {
@@ -18,16 +38,17 @@
 }
 
 body {
-    background-color: transparent;
+    background-color: #217eaa;
     color: #0f1a12;
-    background-image: url(/static/wall_06.gif);
+    background-image: url(/static/backgroundblur.jpg);
+    background-position: center;
+    background-size: cover;
     text-align: center;
 }
 
 .cabecalho {
     text-align: center;
     padding: 10px;
-    border-bottom: 0px solid #192b1e;
     margin-top: 18px;
     margin-left: 5px;
     margin-right: 5px;
@@ -35,41 +56,47 @@ body {
 }
 
 .titulo h1{
-    font-size: 40;
+    font-size: 80px;
     text-shadow: 0px 4px 10px rgba(179,147,211,0.8);
     font-weight: 400;
     margin-top: 12px;
     margin-bottom: 12px;
+    font-family:"Chintzy";
+    color: #f2f2f3;
 }
 
 .fakelogin {
     margin-left: 35px;
     margin-right: 35px;
-    margin-top: 85px;
+    margin-top: 80px;
     padding-top: 10px;
     padding-bottom: 15px;
     padding-left: 10px;
     padding-right: 10px;
-    background-color: #EAEEEC;
-    border: 2px solid black;
+    background-color: #252525;
+    border: 2px solid white;
+    background-image: url(/static/3rdgigbarcode.svg);
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    background-size: 50px 30px;
 }
 
 .fakelogin input[type="text"] {
     border: none;
-    background-color: #EAEEEC;
+    background-color: #252525;
     padding: 5px;
 
 }
 
 .fakelogin input[type="password"] {
     border: none;
-    background-color: #EAEEEC;
+    background-color: #252525;
 
 }
 
 .fakelogin button {
     border: none;
-    background-color: #EAEEEC;
+    background-color: #252525;
     padding:5px;
 
 }
@@ -91,8 +118,8 @@ body {
     height: 370px;
     border-radius: 50%;
     background-image: conic-gradient(
-        #F2E750 135deg,
-        transparent 0 225deg,
+        #F2E750 140deg,
+        transparent 0 230deg,
         #F2E750 0
     );
 }
@@ -106,9 +133,14 @@ body {
     height: 360px;
     border-radius: 50%;
     background-image: conic-gradient(
-        #ffc100 135deg,
-        transparent 0 225deg,
+        #ffc100 70deg,
+        black 0 85deg,
+        #ffc100 0 140deg,
+        transparent 0 230deg,
+        #ffc100 0 300deg,
+        white 0 310deg,
         #ffc100 0
+
     );
 }
 
@@ -120,6 +152,7 @@ body {
     background-color: #f2e750;
     border-radius: 50%;
     display: inline-block;
+    box-shadow: 0px 0px 100px 5px #F2E750;
 }
 
 .inner-line {
@@ -140,12 +173,18 @@ body {
     background-color: #ffd144;
     border-radius: 50%;
     display: inline-block;
+    background-image: url(/static/comp014.gif);
+    box-shadow: 0px 0px 100px 8px #ffd144;
 }
 
+
 footer {
-    text-align: left;
-    margin-top: 105px;
-    padding-left: 10px;
-    padding-top: 10px;
-    padding-right: 30%;
+    text-align: center;
+    padding-top: 50px;
+}
+
+footer i {
+    font-family: "Chintzy";
+    font-size: 20px;
+    color: #ffffff;
 }
