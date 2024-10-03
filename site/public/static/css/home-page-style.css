@@ -1,0 +1,38 @@
+@font-face {
+    font-family: LinuxLibertine;
+    src:url("./fonts/LinLibertine_RI.ttf");
+}
+
+@font-face {
+    font-family: Chintzy;
+    src:url("./fonts/chintzy.ttf");
+}
+
+@font-face {
+    font-family: Venice;
+    src:url("./fonts/venice.ttf");
+}
+
+@font-face {
+    font-family: Knightorns;
+    src:url("./fonts/knightorns.ttf");
+}
+
+@font-face {
+    font-family: BiteAndSlash;
+    src:url("./fonts/biteandslash.ttf");
+}
+
+* {
+    margin: 0px;
+    padding:0px;
+    font-family:"LinuxLibertine";
+    font-size: 15px;
+    font-weight: 250;
+    color:#7af683;
+}
+
+{
+  scrollbar-width: thin;
+  scrollbar-color: transparent;
+}
