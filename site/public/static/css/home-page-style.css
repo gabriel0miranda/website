@@ -36,3 +36,47 @@
   scrollbar-width: thin;
   scrollbar-color: transparent;
 }
+
+body {
+    background-color: #C9AB00;
+    color: #0f1a12;
+    background-image: url(/static/wall_06.gif);
+    text-align: center;
+}
+
+.cabecalho {
+    padding: 10px;
+    margin-top: 18px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 15px;
+    background-image: url(/static/s9.png);
+    background-repeat: no-repeat;
+    background-position: 4% 30%;
+    background-size: 150px 180px;
+}
+
+.cabecalho hr{
+    width: 75%;
+    height: 5px;
+    text-align: right;
+    margin-left: 25%;
+    color: black;
+    background-color: #f2f2f3;
+    display: inline-block;
+}
+
+.titulo {
+    width: 25%;
+}
+
+.titulo h1{
+    font-size: 45px;
+    text-shadow: 0px 4px 10px rgba(179,147,211,0.8);
+    font-weight: 400;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    font-family:"Chintzy";
+    color: #f2f2f3;
+    text-align: left;
+}
