@@ -84,7 +84,7 @@ body {
 .navbar a {
     margin-right: 50px;
     margin-left: 50px;
-    padding: 5px;
+    padding: 10px;
     background-color: #029200;
 }
 
@@ -122,6 +122,7 @@ body {
     background-repeat: no-repeat;
     background-position: 50% 40%;
     background-size: 150px 130px;
+    background-color: white;
     margin: 5px;
     width: 186px;
     height: 160px;
@@ -132,4 +133,19 @@ body {
     margin: 5px;
     border: 1px solid #000000;
     color: #000000;
+}
+
+.painel-introdutorio {
+    background-color: #f2f2f3;
+    margin-right: 20%;
+    margin-left: 0.4%;
+    margin-top: 1%;
+    height: 350px;
+    border: 2px solid black;
+}
+
+.painel-introdutorio p {
+    color: black;
+    font-size: 18px;
+    font-weight: 250;
 }
