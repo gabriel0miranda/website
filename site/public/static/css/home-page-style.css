@@ -29,7 +29,7 @@
     font-family:"LinuxLibertine";
     font-size: 15px;
     font-weight: 250;
-    color:#7af683;
+    color:#f2f300;
 }
 
 {
@@ -41,42 +41,95 @@ body {
     background-color: #C9AB00;
     color: #0f1a12;
     background-image: url(/static/wall_06.gif);
-    text-align: center;
 }
 
 .cabecalho {
-    padding: 10px;
-    margin-top: 18px;
+    margin-top: 10px;
     margin-left: 5px;
     margin-right: 5px;
-    border-radius: 15px;
-    background-image: url(/static/s9.png);
-    background-repeat: no-repeat;
-    background-position: 4% 30%;
-    background-size: 150px 180px;
-}
-
-.cabecalho hr{
-    width: 75%;
-    height: 5px;
-    text-align: right;
-    margin-left: 25%;
-    color: black;
-    background-color: #f2f2f3;
-    display: inline-block;
+    padding: 10px;
+    background-color: rgba(77,77,128,0.7);
+    border: 4px solid #f2f2f3;
 }
 
 .titulo {
-    width: 25%;
+    text-align: left;
+    height: 70px;
+    width: 200px;
+    background-color: black;
+    border: 2px solid #f2f2f3;
+    background-image: url(/static/s9white.png);
+    background-repeat: no-repeat;
+    background-position: 50% 40%;
+    background-size: 150px 190px;
+    display: inline-block;
 }
 
 .titulo h1{
+    margin-top: 15px;
     font-size: 45px;
-    text-shadow: 0px 4px 10px rgba(179,147,211,0.8);
-    font-weight: 400;
-    margin-top: 12px;
-    margin-bottom: 12px;
+    text-shadow: 0px 2px 5px rgba(0,0,0,0.8);
+    font-weight: 200;
     font-family:"Chintzy";
     color: #f2f2f3;
-    text-align: left;
+    text-align: center;
+}
+
+.navbar {
+    width: 75%;
+    text-align: center;
+    display: inline-block;
+}
+
+.navbar a {
+    margin-right: 50px;
+    margin-left: 50px;
+    padding: 5px;
+    background-color: #029200;
+}
+
+.painel-topo-direita {
+    margin: 0px;
+    position: absolute;
+    width: 200px;
+    height: 306px;
+    top: 10%;
+    right: 2%;
+    background-color: black;
+    border-left: 20px dashed #f2f300;
+    border-right: 20px dashed #f2f300;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+.painel-interno {
+    background-color: #f2f2f3;
+    border: 1px solid #000000;
+}
+
+.painel-topo-direita h2 {
+    margin: 5px;
+    text-align: center;
+    border: 1px solid #000000;
+    font-size: 40px;
+    font-weight: 100;
+    color: #000000;
+}
+
+.panel-img {
+    border: 1px solid #000000;
+    background-image: url(/static/3rdgigbarcode.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 40%;
+    background-size: 150px 130px;
+    margin: 5px;
+    width: 186px;
+    height: 160px;
+    display: block;
+}
+
+.painel-topo-direita p {
+    margin: 5px;
+    border: 1px solid #000000;
+    color: #000000;
 }
