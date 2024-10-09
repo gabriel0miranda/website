@@ -75,6 +75,10 @@ body {
     text-align: center;
 }
 
+.titulo a{
+    text-decoration: none;
+}
+
 .subtitulo {
     width: 75%;
     text-align: center;
@@ -118,10 +122,10 @@ body {
 
 .panel-img {
     border: 1px solid #000000;
-    background-image: url(/static/scrolling-info);
+    background-image: url(/static/scrolling-info.gif);
     background-repeat: no-repeat;
     background-position: 50% 40%;
-    background-size: 150px 130px;
+    background-size: 186px 160px;
     background-color: white;
     margin: 5px;
     width: 186px;

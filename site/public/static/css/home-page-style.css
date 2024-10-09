@@ -88,6 +88,10 @@ body {
     background-color: #029200;
 }
 
+.navbar a:hover {
+    padding: 15px;
+}
+
 .painel-topo-direita {
     margin: 0px;
     position: absolute;
@@ -168,6 +172,12 @@ body {
     color: blue;
     font-size: 18px;
     font-weight: 250;
+}
+
+.painel-introdutorio a:hover {
+    color:#f2f300;
+    padding: 10px;
+    background-color: #029200;
 }
 
 .painel-introdutorio sub {
