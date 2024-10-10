@@ -9,18 +9,8 @@
 }
 
 @font-face {
-    font-family: Venice;
-    src:url("./fonts/venice.ttf");
-}
-
-@font-face {
-    font-family: Knightorns;
-    src:url("./fonts/knightorns.ttf");
-}
-
-@font-face {
-    font-family: BiteAndSlash;
-    src:url("./fonts/biteandslash.ttf");
+    font-family: GoodOldDos;
+    src:url("./fonts/Good\ Old\ DOS.ttf");
 }
 
 * {
@@ -148,13 +138,6 @@ body {
     border: 2px solid black;
 }
 
-.painel-informativo p {
-    padding: 10px;
-    color: black;
-    font-size: 18px;
-    font-weight: 250;
-}
-
 .painel-informativo h2 {
     padding: 10px;
     color: black;
@@ -168,21 +151,31 @@ body {
     font-weight: 300;
 }
 
-.painel-informativo a {
-    color: blue;
-    font-size: 18px;
-    font-weight: 250;
-}
-
-.painel-informativo sub {
-    text-align: right;
-    color: black;
-    font-size: 15px;
-    font-weight: 200;
-    display: inline-block;
-}
-
 .painel-informativo hr {
     margin-left: 5px;
     margin-right: 5px;
+}
+
+.informacoes-basicas {
+    color: #029200;
+    font-family: GoodOldDos;
+    background-color: black;
+    width: 36%;
+    height: 50%;
+}
+
+.informacoes-basicas b {
+    font-family: GoodOldDos;
+    color: #029200;
+    padding: 5px;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.informacoes-basicas p {
+    font-family: GoodOldDos;
+    color: #029200;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 250;
 }
