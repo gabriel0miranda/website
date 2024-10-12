@@ -130,53 +130,102 @@ body {
 }
 
 .painel-informativo {
-    background-color: #f2f2f3;
+    background-color: rgba(17,56,15,0.7);
     margin-right: 20%;
     margin-left: 0.4%;
     margin-top: 1%;
-    height: 350px;
-    border: 2px solid black;
+    height: 100%;
 }
 
 .painel-informativo h2 {
     padding: 10px;
-    color: black;
+    color: white;
     font-size: 32px;
     font-weight: 300;
+    text-shadow: #74FFFD 1px 0 10px;
 }
 
 .painel-informativo i {
-    color: black;
+    color: white;
     font-size: 32px;
     font-weight: 300;
+    text-shadow: #74FFFD 1px 0 10px;
 }
 
 .painel-informativo hr {
     margin-left: 5px;
     margin-right: 5px;
+    color: white;
+    box-shadow: #74FFFD 1px 0 10px;
 }
 
-.informacoes-basicas {
-    color: #029200;
-    font-family: GoodOldDos;
-    text-shadow: 2px 2px 2px rgba(100,255,0,0.8);
-    background-color: black;
-    width: 36%;
-    height: 50%;
+.painel-informativo p {
+    color: white;
+    padding: 2px;
+    font-size: 16px;
+    font-weight: 250;
 }
 
-.informacoes-basicas b {
+.painel-informativo b {
     font-family: GoodOldDos;
-    color: #029200;
+    color: white;
     padding: 5px;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 300;
 }
 
-.informacoes-basicas p {
+.informacoes-basicas {
+    color: white;
     font-family: GoodOldDos;
-    color: #029200;
-    padding: 10px;
-    font-size: 18px;
-    font-weight: 250;
+    text-shadow: #74FFFD 1px 0 10px;
+    background-color: rgba(33,124,47,0.7);
+    width: 240px;
+    height: 145px;
+    display: inline-block;
+    margin-left: 5%;
+    margin-top: 2%;
+}
+
+.titulo-informacoes-basicas {
+    height: 15%;
+}
+
+.descricao-fisica {
+    color: white;
+    font-family: GoodOldDos;
+    text-shadow: #74FFFD 1px 0 10px;
+    background-color: rgba(33,124,47,0.7);
+    width: 350px;
+    height: 250px;
+    display: inline-block;
+}
+
+.descricao-psicologica {
+    color: white;
+    font-family: GoodOldDos;
+    text-shadow: #74FFFD 1px 0 10px;
+    background-color: rgba(33,124,47,0.7);
+    width: 25%;
+    height: 50%;
+    display: inline-block;
+}
+
+.como-falar-comigo {
+    color: white;
+    font-family: GoodOldDos;
+    text-shadow: #74FFFD 1px 0 10px;
+    background-color: rgba(33,124,47,0.7);
+    width: 25%;
+    height: 50%;
+    display: inline-block;
+}
+
+.outras-presencas-digitais {
+    color: white;
+    font-family: GoodOldDos;
+    text-shadow: #74FFFD 1px 0 10px;
+    background-color: rgba(33,124,47,0.7);
+    width: 25%;
+    height: 50%;
+    display: inline-block;
 }
