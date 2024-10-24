@@ -181,8 +181,8 @@ body {
     background-color: rgba(33,124,47,0.7);
     width: 240px;
     height: 145px;
-    display: inline-block;
-    margin-left: 5%;
+    display: block;
+    margin-left: 2%;
     margin-top: 2%;
 }
 
@@ -200,14 +200,14 @@ body {
     display: inline-block;
 }
 
-.descricao-psicologica {
+.interesses {
     color: white;
     font-family: GoodOldDos;
     text-shadow: #74FFFD 1px 0 10px;
     background-color: rgba(33,124,47,0.7);
     width: 25%;
     height: 50%;
-    display: inline-block;
+    display: block;
 }
 
 .como-falar-comigo {
@@ -217,7 +217,7 @@ body {
     background-color: rgba(33,124,47,0.7);
     width: 25%;
     height: 50%;
-    display: inline-block;
+    display: block;
 }
 
 .outras-presencas-digitais {
@@ -227,5 +227,5 @@ body {
     background-color: rgba(33,124,47,0.7);
     width: 25%;
     height: 50%;
-    display: inline-block;
+    display: block;
 }
