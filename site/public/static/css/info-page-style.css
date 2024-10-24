@@ -181,10 +181,13 @@ body {
     background-color: rgba(33,124,47,0.7);
     width: 240px;
     height: 145px;
-    display: block;
-    margin-left: 2%;
-    margin-top: 2%;
+    display: inline-block;
+    position: relative;
+    top: 15px;
+    left: 2%;
+    vertical-align: top;
 }
+
 
 .titulo-informacoes-basicas {
     height: 15%;
@@ -198,6 +201,11 @@ body {
     width: 350px;
     height: 250px;
     display: inline-block;
+    position: relative;
+    top: 125px;
+    right: 40%;
+    vertical-align: top;
+    padding: 4px;
 }
 
 .interesses {
@@ -205,9 +213,26 @@ body {
     font-family: GoodOldDos;
     text-shadow: #74FFFD 1px 0 10px;
     background-color: rgba(33,124,47,0.7);
-    width: 25%;
+    width: 35%;
     height: 50%;
-    display: block;
+    display: inline-block;
+    position: relative;
+    left: 40%;
+    top: 15px;
+    padding: 4px;
+}
+
+.interesses li {
+    list-style: inside;
+    color: white;
+}
+
+.interesses dt {
+    color: white;
+}
+
+.interesses dd {
+    color: white;
 }
 
 .como-falar-comigo {
@@ -217,15 +242,6 @@ body {
     background-color: rgba(33,124,47,0.7);
     width: 25%;
     height: 50%;
-    display: block;
-}
-
-.outras-presencas-digitais {
-    color: white;
-    font-family: GoodOldDos;
-    text-shadow: #74FFFD 1px 0 10px;
-    background-color: rgba(33,124,47,0.7);
-    width: 25%;
-    height: 50%;
-    display: block;
+    display: inline-block;
+    padding: 4px;
 }
