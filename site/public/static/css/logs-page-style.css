@@ -141,3 +141,57 @@ body {
     border: 1px solid #000000;
     color: #000000;
 }
+
+.painel-principal {
+    background-color: #f2f2f3;
+    margin-right: 20%;
+    margin-left: 0.4%;
+    margin-top: 1%;
+    height: 350px;
+    border: 2px solid black;
+}
+
+.painel-principal p {
+    padding: 10px;
+    color: black;
+    font-size: 18px;
+    font-weight: 250;
+}
+
+.painel-principal h1 {
+    padding: 10px;
+    color: black;
+    font-size: 32px;
+    font-weight: 300;
+}
+
+.painel-principal i {
+    color: black;
+    font-size: 32px;
+    font-weight: 300;
+}
+
+.painel-principal a {
+    color: blue;
+    font-size: 18px;
+    font-weight: 250;
+}
+
+.painel-principal a:hover {
+    color:#f2f300;
+    padding: 10px;
+    background-color: #029200;
+}
+
+.painel-principal sub {
+    text-align: right;
+    color: black;
+    font-size: 15px;
+    font-weight: 200;
+    display: inline-block;
+}
+
+.painel-principal hr {
+    margin-left: 5px;
+    margin-right: 5px;
+}
