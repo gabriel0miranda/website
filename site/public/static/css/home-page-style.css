@@ -40,7 +40,7 @@
 body {
     background-color: #C9AB00;
     color: #0f1a12;
-    background-image: url(/static/wall_06.gif);
+    background-image: url(../wall_06.gif);
 }
 
 .cabecalho {
@@ -58,7 +58,7 @@ body {
     width: 200px;
     background-color: black;
     border: 2px solid #f2f2f3;
-    background-image: url(/static/s9white.png);
+    background-image: url(../s9white.png);
     background-repeat: no-repeat;
     background-position: 50% 40%;
     background-size: 150px 190px;
@@ -122,7 +122,7 @@ body {
 
 .panel-img {
     border: 1px solid #000000;
-    background-image: url(/static/3rdgigbarcode.svg);
+    background-image: url(../3rdgigbarcode.svg);
     background-repeat: no-repeat;
     background-position: 50% 40%;
     background-size: 150px 130px;
