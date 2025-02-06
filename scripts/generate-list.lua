@@ -46,7 +46,7 @@ end
 local function insert_new_html_list(list_start,lines,items)
     local j=3
     for i=list_start,list_start+(#items)-3 do
-        table.insert(lines,i,"<li><a href=.entries/"..items[j]..">"..string.gsub(items[j],".html","").."</a></li>")
+        table.insert(lines,i,"<li><a href=entries/"..items[j]..">"..string.gsub(items[j],".html","").."</a></li>")
         j = j+1
     end
     return lines
@@ -85,7 +85,7 @@ if target == nil or source == nil then
 elseif not string.find(target,".html") then
     print("Target não é um arquivo HTML válido")
     return 2
-elseif os.execute('ls -a "'..source..'" > /dev/null 2>&1') ~= 0 or os.execute('ls -a "'..target..'" > /dev/null 2>&1') ~= 0 then
+elseif os.execute('ls -a "'..source..'" > /dev/null 2>&1') == nil or os.execute('ls -a "'..target..'" > /dev/null 2>&1') == nil then
     print("Target ou source não existem")
     return 3
 else
