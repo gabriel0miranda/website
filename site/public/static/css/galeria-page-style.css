@@ -1,0 +1,206 @@
+@font-face {
+    font-family: LinuxLibertine;
+    src:url("./fonts/LinLibertine_RI.ttf");
+}
+
+@font-face {
+    font-family: Chintzy;
+    src:url("./fonts/chintzy.ttf");
+}
+
+@font-face {
+    font-family: GoodOldDos;
+    src:url("./fonts/Good\ Old\ DOS.ttf");
+}
+
+* {
+    margin: 0px;
+    padding:0px;
+    font-family:"LinuxLibertine";
+    font-size: 15px;
+    font-weight: 250;
+    color:#f2f300;
+}
+
+{
+  scrollbar-width: thin;
+  scrollbar-color: transparent;
+}
+
+body {
+    background-color: #C9AB00;
+    color: #0f1a12;
+    background-image: url(../wall_06.gif);
+}
+
+.cabecalho {
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 10px;
+    background-color: rgba(77,77,128,0.7);
+    border: 4px solid #f2f2f3;
+}
+
+.titulo {
+    text-align: left;
+    height: 70px;
+    width: 200px;
+    background-color: black;
+    border: 2px solid #f2f2f3;
+    background-image: url(../s9white.png);
+    background-repeat: no-repeat;
+    background-position: 50% 40%;
+    background-size: 150px 190px;
+    display: inline-block;
+}
+
+.titulo h1{
+    margin-top: 15px;
+    font-size: 45px;
+    text-shadow: 0px 2px 5px rgba(0,0,0,0.8);
+    font-weight: 200;
+    font-family:"Chintzy";
+    color: #f2f2f3;
+    text-align: center;
+}
+
+.titulo a{
+    text-decoration: none;
+}
+
+.titulo p{
+    text-align: right;
+    color: #f2f2f3;
+    background-color:#000000;
+    width: 62%;
+    border: 2px solid #f2f2f3;
+    display: inline;
+    position: relative;
+    left: 50px;
+    padding-right: 4px;
+    padding-left: 4px;
+}
+
+.subtitulo {
+    width: 75%;
+    text-align: center;
+    display: inline-block;
+}
+
+.subtitulo p {
+    margin-right: 50px;
+    margin-left: 50px;
+    padding: 10px;
+    background-color: #029200;
+}
+
+.painel-topo-direita {
+    margin: 0px;
+    position: absolute;
+    width: 200px;
+    height: 306px;
+    top: 10%;
+    right: 2%;
+    background-color: black;
+    border-left: 20px dashed #f2f300;
+    border-right: 20px dashed #f2f300;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+.painel-interno {
+    background-color: #f2f2f3;
+    border: 1px solid #000000;
+}
+
+.painel-topo-direita h2 {
+    margin: 5px;
+    text-align: center;
+    border: 1px solid #000000;
+    font-size: 40px;
+    font-weight: 100;
+    color: #000000;
+}
+
+.panel-img {
+    border: 1px solid #000000;
+    background-image: url(../scrolling-info.gif);
+    background-repeat: no-repeat;
+    background-position: 50% 40%;
+    background-size: 186px 160px;
+    background-color: white;
+    margin: 5px;
+    width: 186px;
+    height: 160px;
+    display: block;
+}
+
+.painel-topo-direita p {
+    margin: 7px;
+    padding: 17px;
+    border: 1px solid #000000;
+    color: #000000;
+}
+
+.painel-principal {
+    margin-right: 20%;
+    margin-left: 0.4%;
+    margin-top: 1%;
+    border: 2px solid black;
+    min-height: 350px;
+    /*height:100vh; */
+    display:grid;
+    place-items: center;
+    background-color: rgba(77,77,128,0.7);
+}
+
+.painel-principal p {
+    padding: 10px;
+    color: white;
+    font-size: 18px;
+    font-weight: 250;
+    text-shadow: #74FFFD 1px 0 10px;
+}
+
+.painel-principal h1 {
+    padding: 10px;
+    color: white;
+    font-size: 32px;
+    font-weight: 300;
+    text-shadow: #74FFFD 1px 0 10px;
+}
+
+.galeria{
+  position:relative;
+  width:200px;
+  height:100px;
+  transform-style:preserve-3d;
+  animation:rotate 35s linear infinite;
+}
+
+@keyframes rotate{
+  from{
+    transform:perspective(1200px) rotateY(0deg);
+  }
+  
+  to{
+    transform:perspective(1200px) rotateY(360deg);
+  }
+}
+
+.galeria span{
+  position:absolute;
+  width:100%;
+  height:100%;
+  transform-origin:center;
+  transform-style:preserve-3d;
+  transform:rotateY(calc(var(--i) * 63deg)) translateZ(300px);
+}
+
+.galeria span img{
+  position:absolute;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
