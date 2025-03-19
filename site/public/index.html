@@ -22,12 +22,10 @@
                 <div class="boasvindas">
                     <p>Seja bem vindo.<p>
                 </div>
-                <form>
-                    <label for="login">Login: </label><input type="text" id="login" name="login"><br>
-                    <label for="password">Password: </label><input type="password" id="password" name="password"><br>
-                    <a href="./home">
-                    <button type="button">Enter</button>
-                    </a>
+                <form id="login">
+                    <label for="user">User: </label><input type="text" id="user" value="anon" name="user" maxlength="14" minlength="1"><br>
+                    <label for="password">Password: </label><input type="password" id="password" name="password" value="anon" maxlength="14" minlength="1" ><br>
+                    <button type="submit" >Enter</button>
                 </form>
             </div>
         </div>
@@ -39,4 +37,30 @@
             <p2><i>Feito com paciência por Gabriel Silva Miranda</i></p2>
         </footer>
     </body>
+    <script>
+      const form = document.getElementById("login");
+
+      async function sendData() {
+        const formData = new FormData(form);
+
+        try {
+          const response = await fetch("http://localhost:4000/website/auth", {
+            method: "POST",
+            body: formData,
+          });
+          console.log(await response.json());
+        } catch (e) {
+          console.error(e);
+        }
+      }
+
+      try{
+        form.addEventListener("submit", (event) => {
+          event.preventDefault();
+          sendData();
+        });
+      } catch (e) {
+        console.error(e);
+      }
+    </script>
 </html>
