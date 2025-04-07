@@ -50,10 +50,10 @@
             body: passwordField.value
           });
           const hash = await response.text()
-          document.cookie = "userid=" + userField.value + "(" + hash.substring(0,7) + ")" + "; Domain=localhost; SameSite=Strict";
+          document.cookie = "userid=" + userField.value + "(" + hash.substring(0,7) + ")" + "; Domain=3rdgig.net.br; SameSite=Strict";
         } catch (e) {
           console.error(e);
-          document.cookie = "userid=" + userField.value + "4n0N1Mo" + "; Domain=localhost; SameSite=Strict";
+          document.cookie = "userid=" + userField.value + "4n0N1Mo" + "; Domain=3rdgig.net.br; SameSite=Strict";
         }
       }
 
