@@ -45,7 +45,7 @@
         const passwordField = form.elements['password'];
 
         try {
-          const response = await fetch("http://localhost:4000/website/hash", {
+          const response = await fetch("https://inner_gate.3rdgig.net.br/website/hash", {
             method: "POST",
             body: passwordField.value,
           });
@@ -61,7 +61,7 @@
         form.addEventListener("submit", (event) => {
           event.preventDefault();
           setCookie();
-          window.location.href="http://localhost:8080/home";
+          window.location.href="./home";
         });
       } catch (e) {
         console.error(e);
