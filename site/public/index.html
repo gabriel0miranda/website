@@ -47,13 +47,13 @@
         try {
           const response = await fetch("https://inner_gate.3rdgig.net.br/website/hash", {
             method: "POST",
-            body: passwordField.value,
+            body: passwordField.value
           });
-          document.cookie = "userid=" + userField.value + await response.substring(0,7);
-          console.log(await response.json());
+          const hash = await response.text()
+          document.cookie = "userid=" + userField.value + "(" + hash.substring(0,7) + ")" + "; Domain=localhost; SameSite=Strict";
         } catch (e) {
           console.error(e);
-          document.cookie = "userid=" + userField.value + "4n0N1Mo";
+          document.cookie = "userid=" + userField.value + "4n0N1Mo" + "; Domain=localhost; SameSite=Strict";
         }
       }
 
