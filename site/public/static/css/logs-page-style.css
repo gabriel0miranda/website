@@ -158,6 +158,14 @@ body {
     font-weight: 250;
 }
 
+.painel-principal li {
+    list-style: inside;
+    padding: 10px;
+    color: black;
+    font-size: 18px;
+    font-weight: 250;
+}
+
 .painel-principal h1 {
     padding: 10px;
     color: black;
@@ -196,7 +204,3 @@ body {
     margin-right: 5px;
 }
 
-.painel-principal li {
-    list-style: inside;
-    color: white;
-}
