@@ -192,3 +192,34 @@ body {
     margin-left: 5px;
     margin-right: 5px;
 }
+
+.webring {
+    margin: 0px;
+    position: absolute;
+    width: 240px;
+    height: 200px;
+    top: 60%;
+    right: 2.5%;
+}
+
+.webring h2 {
+    font-size: 25px;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.webring a {
+    text-decoration: none;
+}
+
+.webring-gif {
+    background-image: url(../circ.gif);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 240px 200px;
+}
+
+.webring h2:hover {
+    text-shadow: #74FFFD 1px 0 20px;
+}
