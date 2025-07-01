@@ -204,3 +204,11 @@ body {
     margin-right: 5px;
 }
 
+.hidden {
+    background: white;
+    color: white;
+}
+
+.hidden:hover {
+    background: black;
+}
