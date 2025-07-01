@@ -43,14 +43,38 @@ body {
   border-radius: 8px;
 }
 
-.internal-circle {
-  width: 70px;
-  height: 70px;
+div { aspect-ratio: 1 }
+
+.img-circle {
+  --d: 6.5em; /* image size */
+  --rel: 1; /* how much extra space we want between images, 1 = 1 image size */
+  --ba: 1turn/var(--m);  /* base angle = 1 full turn divided by number of edges */
+  /* (1 + var(--rel))*var(--d) = polygon edge = img size + extra space */
+  --r: calc(.5*(1 + var(--rel))*var(--d)/tan(.5*var(--ba))); /* circle radius */
+  display: grid;
+  width: calc(2*var(--r) + var(--d)); /* container size */
   position: absolute;
-  font-size: 70px;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
   margin: auto;
+}
+
+.img-circle a {
+  text-decoration: none;
+  grid-area: 1/ 1;
+  place-self: center;
+  width: var(--d);
+  --ca: calc(var(--i)*var(--ba));
+  transform: 
+    rotate(var(--ca)) 
+    translate(var(--r))
+    rotate(calc(-1*var(--ca)))
+}
+
+img { max-width: 100% }
+
+.internal-circle {
+  font-size: 100px;
 }
