@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>3rd GIG</title>
+        <link href="../../static/css/logs-page-style.css" rel="stylesheet" type="text/css" media="all">
+        <link rel="icon" type="image/x-icon" href="../../static/favicon.ico">
+    </head>
+    <body>
+        <div class="cabecalho">
+            <div class="titulo">
+                <a href="../../home/index.html"><h1>3rd GIG</h1>
+                    <p>retornar à homepage</p>
+                </a>
+            </div>
+            <div class="subtitulo">
+              <p>Algumas ideias sobre transparência na web.</p>
+            </div>
+        </div>
+        <div class="painel-topo-direita">
+            <div class="painel-interno">
+                <h2>LOG FILE</h2>
+                <div class="panel-img">
+                </div>
+                <p>A parede de texto que escorre pela tela dá pistas do que se passa na mente da máquina.</p>
+            </div>
+        </div>
+        <div class="painel-principal">
+            <h1>Transparência Web</h1>
+            <p>Acho que quando falamos de transparência alguns detalhes técnicos ficam de fora, detalhes esses que são indispensáveis ao passo que o mundo se digitaliza cada vez mais. A transparência governamental brasileira, por exemplo, está distante de ter mecanismos efetivos para realmente mostrar o que acontece por dentro dos palácios e das câmaras, mesmo sendo completamente possível implementar tecnologias que facilitam a visualização pública, via internet, de dados tangentes à sociedade.</p>
+            <p>Neste texto pretendo abordar a transparência de hospedagem de serviços, ferramentas e páginas na internet.</p>
+            <p>Basicamente o caso é o seguinte: eu, empresa/organização/governo, tenho um serviço/ferramenta/página na web e gostaria de oferecer aos usuários informações sobre determinados elementos de interesse, como de onde estão sendo feitos os acessos ao site em cada momento, qual software está sendo utilizado para fazer o site funcionar, como está a saúde de uma carteira de doações que mantem o host do site pago, etc.</p>
+            <p>O primeiro passo é o software livre, de código aberto, que ao meu ver deveria ser padrão para todo serviço de TI que se propõe a ser transparente. A questão se aprofunda, porém, quando se trata de prover visibilidade sobre a hospedagem das aplicações, já que não existem soluções prontas que cumprem esse papel.</p>
+            <p>Por meio de ferramentas como SSH, em conjunto com políticas estritas de permissões, é teoricamente possível providenciar acesso a servidores e permitir a verificação de executáveis (via assinaturas e checksums), assim como a verificação de logs que comprovem a legitimidade dos sites. Ao meu ver o fluxo funcionaria da seguinte forma: o hospedeiro provê, por meio de SSH (no caso de servidores comuns) ou ferramentas semelhantes (como kubectl no caso de ambientes Kubernetes), acesso à hospedagem de forma anônima e restrita; o usuário que acessa o servidor poderia verificar o processo que de fato serve a aplicação web e identificar o executável utilizado, podendo então verificar sua autenticidade por meio de checksums; por fim o usuário poderia também verificar os logs da aplicação e testar se seu acesso ao site no navegador confere com os logs de acesso no servidor. Por meio desse mecanismo qualquer pessoa poderia assegurar que a aplicação sendo utilizada não foi adulterada antes de ser hospedada (algo que apenas o fato do software ser open source não garante).</p>
+            <p>A solução supracitada é simples, apesar de sua eficiência ser discutível e carecer de testes. Ao meu ver, porém, seria uma prática que dificultaria muito tentativas de falsificar a legitimidade de websites, sendo necessário um esforço muito maior do que simplesmente fazer com que o site no navegador pareça legítimo.</p>
+            <p>Concluindo, gostaria de invocar o pensamento de que todo caso de whistleblowing, vazamento de dados e desconfiança nas instituições está intrinsecamente ligado a uma falha de uma organização em proporcionar transparência a seus interessados.</p>
+        </div>
+    </body>
+</html>
