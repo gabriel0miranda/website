@@ -40,6 +40,13 @@ body {
     background-color: #C9AB00;
     color: #0f1a12;
     background-image: url(../wall_06.gif);
+    display: grid;
+    grid-template-areas:
+      "header header"
+      "panels panels"
+      "footer footer";
+    grid-template-columns: 5fr 1fr;
+    gap: 0.8%;
 }
 
 .cabecalho {
@@ -49,33 +56,36 @@ body {
     padding: 0.5%;
     background-color: rgba(77,77,128,0.7);
     border: 4px solid #f2f2f3;
+    display: flex;
+    grid-area: header;
 }
 
 .titulo {
-    text-align: left;
+    text-align: center;
     background-color: black;
     border: 2px solid #f2f2f3;
     background-image: url(../s9white.png);
     background-repeat: no-repeat;
     background-position: 50% 40%;
-    background-size: 150px 190px;
-    display: inline-block;
+    background-size: 140px 180px;
+    min-width: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .titulo h1{
-    padding: 2%;
-    font-size: 300%;
+    padding: 1%;
+    font-size: 250%;
     text-shadow: 0px 2px 5px rgba(0,0,0,0.8);
-    font-weight: 200;
     font-family:"Chintzy";
     color: #f2f2f3;
-    text-align: center;
 }
 
 .navbar {
     width: 75%;
     text-align: center;
-    display: inline-block;
+    padding-top: 2%;
 }
 
 .navbar a {
@@ -89,73 +99,76 @@ body {
     padding: 1.5%;
 }
 
+.paineis {
+    grid-area: panels;
+    display: grid;
+    grid-template-areas:
+      "content sidebar";
+    grid-template-columns: 4fr 1fr;
+    gap: 0.4%;
+    margin: 0.4%;
+}
+
 .painel-topo-direita {
-    margin: 0px;
-    position: absolute;
-    width: 15%;
-    top: 10%;
-    right: 2%;
-    background-color: black;
-    border-left: 20px dashed #f2f300;
-    border-right: 20px dashed #f2f300;
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
+    grid-area: sidebar;
+    display: grid;
+    grid-template-areas:
+      "card"
+      "card";
+    grid-template-rows: 1fr 1fr;
 }
 
 .painel-interno {
-    background-color: #f2f2f3;
-    border: 1px solid #000000;
+    border-left: 3vmin dashed #f2f300;
+    border-right: 3vmin dashed #f2f300;
+    border-top: 0.2vmin solid black;
+    border-bottom: 0.2vmin solid black;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
 }
 
 .painel-topo-direita h2 {
-    margin: 5px;
     text-align: center;
-    border: 1px solid #000000;
-    font-size: 40px;
-    font-weight: 100;
+    border: 1px solid black;
+    font-size: 2vmax;
     color: #000000;
+    background-color: #f2f2f3;
 }
 
 .panel-img {
-    border: 1px solid #000000;
+    border: 1px solid black;
     background-image: url(../3rdgigbarcode.svg);
     background-repeat: no-repeat;
     background-position: 50% 40%;
-    background-size: 150px 130px;
+    background-size: 100% 100%;
     background-color: white;
-    margin: 5px;
-    width: 186px;
-    height: 160px;
-    display: block;
+    height: 15vmin;
 }
 
 .painel-topo-direita p {
-    margin: 5px;
-    border: 1px solid #000000;
+    border: 1px solid black;
+    font-size: 1.2vmax;
     color: #000000;
+    background-color: #f2f2f3;
 }
 
 .painel-introdutorio {
     background-color: #f2f2f3;
-    margin-right: 20%;
-    margin-left: 0.4%;
-    margin-top: 1%;
-    height: 350px;
     border: 2px solid black;
+    grid-area: content;
 }
 
 .painel-introdutorio p {
-    padding: 10px;
+    padding: 1%;
     color: black;
-    font-size: 18px;
-    font-weight: 250;
+    font-size: 120%;
 }
 
 .painel-introdutorio h2 {
-    padding: 10px;
+    padding: 1%;
     color: black;
-    font-size: 32px;
-    font-weight: 300;
+    font-size: 140%;
 }
 
 .painel-introdutorio i {
@@ -172,7 +185,7 @@ body {
 
 .painel-introdutorio a:hover {
     color:#f2f300;
-    padding: 10px;
+    padding: 2%;
     background-color: #029200;
 }
 
@@ -185,35 +198,42 @@ body {
 }
 
 .painel-introdutorio hr {
-    margin-left: 5px;
-    margin-right: 5px;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+}
+
+.quote {
+    grid-area: footer;
+    color: black;
+    margin: 1%;
+}
+
+.quote i {
+    color: black;
 }
 
 .webring {
-    margin: 0px;
-    position: absolute;
-    width: 140px;
-    height: 100px;
-    top: 50%;
-    right: 5%;
+    max-width: 14vmax;
+    min-width: 8vmax;
+    max-height: 10vmax;
+    min-height: 4vmax;
+    grid-area: card;
+    grid-row: 2;
+    background-image: url(../circ.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 14vmax 10vmax;
 }
 
 .webring h2 {
-    font-size: 16px;
+    font-size: 2vmin;
     text-align: center;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 30%;
+    padding-bottom: 30%;
 }
 
 .webring a {
     text-decoration: none;
-}
-
-.webring-gif {
-    background-image: url(../circ.png);
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-size: 140px 100px;
 }
 
 .webring h2:hover {
