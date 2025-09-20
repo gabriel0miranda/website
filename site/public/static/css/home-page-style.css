@@ -26,8 +26,7 @@
 * {
     margin: 0px;
     font-family:"LinuxLibertine";
-    font-size: 15px;
-    font-weight: 250;
+    font-size: 1.5vmax;
     color:#f2f300;
 }
 
@@ -46,6 +45,7 @@ body {
       "panels panels"
       "footer footer";
     grid-template-columns: 5fr 1fr;
+    grid-template-rows: 1fr 5fr 1fr;
     gap: 0.8%;
 }
 
@@ -76,7 +76,7 @@ body {
 
 .titulo h1{
     padding: 1%;
-    font-size: 250%;
+    font-size: 6vmin;
     text-shadow: 0px 2px 5px rgba(0,0,0,0.8);
     font-family:"Chintzy";
     color: #f2f2f3;
@@ -89,6 +89,7 @@ body {
 }
 
 .navbar a {
+    font-size: 2.5vmin;
     margin-right: 8%;
     margin-left: 8%;
     padding: 1%;
@@ -104,7 +105,7 @@ body {
     display: grid;
     grid-template-areas:
       "content sidebar";
-    grid-template-columns: 4fr 1fr;
+    grid-template-columns: 5fr 2fr;
     gap: 0.4%;
     margin: 0.4%;
 }
@@ -124,6 +125,9 @@ body {
     border-top: 0.2vmin solid black;
     border-bottom: 0.2vmin solid black;
     background-color: black;
+    max-width: 15vmax;
+    max-height: 19vmax;
+    justify-self: center;
     display: flex;
     flex-direction: column;
 }
@@ -141,7 +145,7 @@ body {
     background-image: url(../3rdgigbarcode.svg);
     background-repeat: no-repeat;
     background-position: 50% 40%;
-    background-size: 100% 100%;
+    background-size: 110% 110%;
     background-color: white;
     height: 15vmin;
 }
@@ -162,30 +166,28 @@ body {
 .painel-introdutorio p {
     padding: 1%;
     color: black;
-    font-size: 120%;
+    font-size: 1.5vmax;
 }
 
 .painel-introdutorio h2 {
     padding: 1%;
     color: black;
-    font-size: 140%;
+    font-size: 2vmax;
 }
 
 .painel-introdutorio i {
     color: black;
-    font-size: 32px;
-    font-weight: 300;
+    font-size: 3vmax;
 }
 
 .painel-introdutorio a {
     color: blue;
-    font-size: 18px;
-    font-weight: 250;
+    font-size: 1.5vmax;
 }
 
 .painel-introdutorio a:hover {
     color:#f2f300;
-    padding: 2%;
+    padding: 0.2%;
     background-color: #029200;
 }
 
@@ -202,21 +204,14 @@ body {
     margin-right: 0.5%;
 }
 
-.quote {
-    grid-area: footer;
-    color: black;
-    margin: 1%;
-}
-
-.quote i {
-    color: black;
-}
 
 .webring {
-    max-width: 14vmax;
-    min-width: 8vmax;
-    max-height: 10vmax;
-    min-height: 4vmax;
+    justify-self: center;
+    align-self: center;
+    max-width: 19vmax;
+    min-width: 14vmax;
+    max-height: 15vmax;
+    min-height: 10vmax;
     grid-area: card;
     grid-row: 2;
     background-image: url(../circ.png);
@@ -226,10 +221,13 @@ body {
 }
 
 .webring h2 {
-    font-size: 2vmin;
+    color: #f2f2f3;
+    font-size: 3vmin;
     text-align: center;
     padding-top: 30%;
     padding-bottom: 30%;
+    background: none;
+    border: none;
 }
 
 .webring a {
@@ -238,4 +236,16 @@ body {
 
 .webring h2:hover {
     text-shadow: #74FFFD 1px 0 20px;
+}
+
+.quote {
+    grid-area: footer;
+    align-self: end;
+    color: black;
+    margin: 1%;
+}
+
+.quote i {
+    font-size: 1.4vmax;
+    color: black;
 }
