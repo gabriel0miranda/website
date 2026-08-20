@@ -1,0 +1,1162 @@
+/* ==========================================================
+   3rd GIG — CSS Unificado
+   ========================================================== */
+
+/* === FONTES === */
+@font-face {
+    font-family: LinuxLibertine;
+    src: url("./fonts/LinLibertine_RI.ttf");
+}
+
+@font-face {
+    font-family: Chintzy;
+    src: url("./fonts/chintzy.ttf");
+}
+
+@font-face {
+    font-family: GoodOldDos;
+    src: url("./fonts/Good Old DOS.ttf");
+}
+
+/* === RESET E BASE === */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "LinuxLibertine";
+    font-size: 15px;
+    font-weight: 250;
+    color: #f2f300;
+}
+
+html {
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
+}
+
+body {
+    background-color: #C9AB00;
+    color: #0f1a12;
+    background-image: url(../wall_06.gif);
+}
+
+/* === CABEÇALHO (comum a home, logs, info, galeria) === */
+.cabecalho {
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 10px;
+    background-color: rgba(77, 77, 128, 0.7);
+    border: 4px solid #f2f2f3;
+}
+
+.titulo {
+    text-align: left;
+    height: 70px;
+    width: 200px;
+    background-color: black;
+    border: 2px solid #f2f2f3;
+    background-image: url(../s9white.png);
+    background-repeat: no-repeat;
+    background-position: 50% 40%;
+    background-size: 150px 190px;
+    display: inline-block;
+}
+
+.titulo h1 {
+    margin-top: 15px;
+    font-size: 45px;
+    text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.8);
+    font-weight: 200;
+    font-family: "Chintzy";
+    color: #f2f2f3;
+    text-align: center;
+}
+
+.titulo a {
+    text-decoration: none;
+}
+
+.titulo p {
+    text-align: right;
+    color: #f2f2f3;
+    background-color: #000000;
+    width: 62%;
+    border: 2px solid #f2f2f3;
+    display: inline;
+    position: relative;
+    left: 50px;
+    padding-right: 4px;
+    padding-left: 4px;
+}
+
+.subtitulo {
+    width: 75%;
+    text-align: center;
+    display: inline-block;
+}
+
+.subtitulo p {
+    margin-right: 50px;
+    margin-left: 50px;
+    padding: 10px;
+    background-color: #029200;
+}
+
+/* === NAVBAR (home) === */
+.navbar {
+    width: 75%;
+    text-align: center;
+    display: inline-block;
+}
+
+.navbar a {
+    margin-right: 50px;
+    margin-left: 50px;
+    padding: 10px;
+    background-color: #029200;
+}
+
+.navbar a:hover {
+    padding: 15px;
+}
+
+/* === PAINEL LATERAL DIREITO (comum) === */
+.painel-topo-direita {
+    margin: 0;
+    position: absolute;
+    width: 200px;
+    height: 306px;
+    top: 10%;
+    right: 2%;
+    background-color: black;
+    border-left: 20px dashed #f2f300;
+    border-right: 20px dashed #f2f300;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+.painel-interno {
+    background-color: #f2f2f3;
+    border: 1px solid #000000;
+}
+
+.painel-topo-direita h2 {
+    margin: 5px;
+    text-align: center;
+    border: 1px solid #000000;
+    font-size: 40px;
+    font-weight: 100;
+    color: #000000;
+}
+
+.panel-img {
+    border: 1px solid #000000;
+    background-repeat: no-repeat;
+    background-position: 50% 40%;
+    background-size: 186px 160px;
+    background-color: white;
+    margin: 5px;
+    width: 186px;
+    height: 160px;
+    display: block;
+}
+
+.painel-topo-direita p {
+    margin: 5px;
+    border: 1px solid #000000;
+    color: #000000;
+}
+
+/* === PAINEL PRINCIPAL (logs, galeria) === */
+.painel-principal {
+    background-color: #f2f2f3;
+    margin-right: 20%;
+    margin-left: 0.4%;
+    margin-top: 1%;
+    border: 2px solid black;
+    min-height: 350px;
+}
+
+.painel-principal p {
+    padding: 10px;
+    color: black;
+    font-size: 18px;
+    font-weight: 250;
+}
+
+.painel-principal li {
+    list-style: inside;
+    padding: 10px;
+    color: black;
+    font-size: 18px;
+    font-weight: 250;
+}
+
+.painel-principal h1 {
+    padding: 10px;
+    color: black;
+    font-size: 32px;
+    font-weight: 300;
+}
+
+.painel-principal i {
+    color: black;
+    font-size: 32px;
+    font-weight: 300;
+}
+
+.painel-principal a {
+    color: blue;
+    font-size: 18px;
+    font-weight: 250;
+}
+
+.painel-principal a:hover {
+    color: #f2f300;
+    padding: 10px;
+    background-color: #029200;
+}
+
+.painel-principal sub {
+    text-align: right;
+    color: black;
+    font-size: 15px;
+    font-weight: 200;
+    display: inline-block;
+}
+
+.painel-principal hr {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.hidden {
+    background: white;
+    color: white;
+}
+
+.hidden:hover {
+    background: black;
+}
+
+/* ==========================================================
+   PAGE-SPECIFIC: LANDING
+   ========================================================== */
+.page-landing {
+    background-color: #217eaa;
+    background-image: url(../backgroundblur.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+
+.page-landing * {
+    color: #7af683;
+}
+
+.page-landing .cabecalho {
+    text-align: center;
+    padding: 10px;
+    margin-top: 18px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 15px;
+    background-color: transparent;
+    border: none;
+}
+
+.page-landing .titulo {
+    text-align: center;
+    height: auto;
+    width: auto;
+    background-color: transparent;
+    border: none;
+    background-image: none;
+    display: block;
+}
+
+.page-landing .titulo h1 {
+    font-size: 80px;
+    text-shadow: 0px 4px 10px rgba(179, 147, 211, 0.8);
+    font-weight: 400;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    font-family: "Chintzy";
+    color: #f2f2f3;
+}
+
+.outer-outer-circle {
+    margin-top: 20px;
+    text-align: center;
+    background-color: transparent;
+    display: inline-block;
+    width: 370px;
+    height: 370px;
+    border-radius: 50%;
+    background-image: conic-gradient(
+        #F2E750 140deg,
+        transparent 0 230deg,
+        #F2E750 0
+    );
+}
+
+.outer-circle {
+    margin-top: 5px;
+    text-align: center;
+    background-color: transparent;
+    display: inline-block;
+    width: 360px;
+    height: 360px;
+    border-radius: 50%;
+    background-image: conic-gradient(
+        #ffc100 70deg,
+        black 0 85deg,
+        #ffc100 0 140deg,
+        transparent 0 230deg,
+        #ffc100 0 300deg,
+        white 0 310deg,
+        #ffc100 0
+    );
+}
+
+.inner-circle {
+    margin-top: 20px;
+    text-align: center;
+    height: 320px;
+    width: 320px;
+    background-color: #f2e750;
+    border-radius: 50%;
+    display: inline-block;
+    box-shadow: 0px 0px 100px 5px #F2E750;
+}
+
+.inner-line {
+    margin-top: 8px;
+    text-align: center;
+    height: 300px;
+    width: 300px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: inline-block;
+    border: 2px solid #ffffff;
+}
+
+.inner-inner-circle {
+    padding-top: 1px;
+    height: 299px;
+    width: 299px;
+    background-color: #ffd144;
+    border-radius: 50%;
+    display: inline-block;
+    background-image: url(../comp014.gif);
+    box-shadow: 0px 0px 100px 8px #ffd144;
+}
+
+.fakelogin {
+    margin-left: 35px;
+    margin-right: 35px;
+    margin-top: 80px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #252525;
+    border: 2px solid white;
+    background-image: url(../3rdgigbarcode.svg);
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    background-size: 50px 30px;
+}
+
+.fakelogin input[type="text"] {
+    border: none;
+    background-color: #252525;
+    padding: 5px;
+}
+
+.fakelogin input[type="password"] {
+    border: none;
+    background-color: #252525;
+}
+
+.fakelogin button {
+    border: none;
+    background-color: #252525;
+    padding: 5px;
+}
+
+.fakelogin textarea:focus,
+.fakelogin input:focus {
+    outline: none;
+}
+
+.boasvindas p {
+    padding: 5px;
+}
+
+.page-landing footer {
+    text-align: center;
+    padding-top: 50px;
+}
+
+.page-landing footer i {
+    font-family: "Chintzy";
+    font-size: 20px;
+    color: #ffffff;
+}
+
+/* ==========================================================
+   PAGE-SPECIFIC: HOME
+   ========================================================== */
+.page-home .panel-img {
+    background-image: url(../3rdgigbarcode.svg);
+    background-size: 150px 130px;
+}
+
+.page-home .painel-introdutorio {
+    background-color: #f2f2f3;
+    margin-right: 20%;
+    margin-left: 0.4%;
+    margin-top: 1%;
+    height: 350px;
+    border: 2px solid black;
+}
+
+.page-home .painel-introdutorio p {
+    padding: 10px;
+    color: black;
+    font-size: 18px;
+    font-weight: 250;
+}
+
+.page-home .painel-introdutorio h2 {
+    padding: 10px;
+    color: black;
+    font-size: 32px;
+    font-weight: 300;
+}
+
+.page-home .painel-introdutorio i {
+    color: black;
+    font-size: 32px;
+    font-weight: 300;
+}
+
+.page-home .painel-introdutorio a {
+    color: blue;
+    font-size: 18px;
+    font-weight: 250;
+}
+
+.page-home .painel-introdutorio a:hover {
+    color: #f2f300;
+    padding: 10px;
+    background-color: #029200;
+}
+
+.page-home .painel-introdutorio sub {
+    text-align: right;
+    color: black;
+    font-size: 15px;
+    font-weight: 200;
+    display: inline-block;
+}
+
+.page-home .painel-introdutorio hr {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.webring {
+    margin: 0;
+    position: absolute;
+    width: 140px;
+    height: 100px;
+    top: 50%;
+    right: 5%;
+}
+
+.webring h2 {
+    font-size: 16px;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.webring a {
+    text-decoration: none;
+}
+
+.webring-gif {
+    background-image: url(../circ.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 140px 100px;
+}
+
+.webring h2:hover {
+    text-shadow: #74FFFD 1px 0 20px;
+}
+
+/* ==========================================================
+   PAGE-SPECIFIC: LOGS
+   ========================================================== */
+.page-logs .panel-img {
+    background-image: url(../brainspin.gif);
+    background-size: 186px 160px;
+    height: 179px;
+}
+
+/* ==========================================================
+   PAGE-SPECIFIC: GALERIA
+   ========================================================== */
+.page-galeria .panel-img {
+    background-image: url(../scrolling-info.gif);
+}
+
+.page-galeria .painel-topo-direita p {
+    margin: 7px;
+    padding: 17px;
+}
+
+.page-galeria .painel-principal {
+    display: grid;
+    place-items: center;
+    background-color: rgba(77, 77, 128, 0.7);
+}
+
+.page-galeria .painel-principal p {
+    color: white;
+    text-shadow: #74FFFD 1px 0 10px;
+}
+
+.page-galeria .painel-principal h1 {
+    color: white;
+    text-shadow: #74FFFD 1px 0 10px;
+}
+
+.galeria {
+    position: relative;
+    width: 200px;
+    height: 100px;
+    transform-style: preserve-3d;
+    animation: rotate 35s linear infinite;
+}
+
+@keyframes rotate {
+    from {
+        transform: perspective(1200px) rotateY(0deg);
+    }
+    to {
+        transform: perspective(1200px) rotateY(360deg);
+    }
+}
+
+.galeria span {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--i) * 63deg)) translateZ(300px);
+}
+
+.galeria span img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ==========================================================
+   PAGE-SPECIFIC: INFO
+   ========================================================== */
+.page-info .panel-img {
+    background-image: url(../scrolling-info.gif);
+}
+
+.painel-informativo {
+    background-color: rgba(17, 56, 15, 0.7);
+    margin-right: 20%;
+    margin-left: 0.4%;
+    margin-top: 1%;
+    padding-bottom: 20px;
+    overflow: hidden;
+}
+
+.painel-informativo h2 {
+    padding: 10px;
+    color: white;
+    font-size: 32px;
+    font-weight: 300;
+    text-shadow: #74FFFD 1px 0 10px;
+}
+
+.painel-informativo i {
+    color: white;
+    font-size: 32px;
+    font-weight: 300;
+    text-shadow: #74FFFD 1px 0 10px;
+}
+
+.painel-informativo hr {
+    margin-left: 5px;
+    margin-right: 5px;
+    color: white;
+    box-shadow: #74FFFD 1px 0 10px;
+}
+
+.painel-informativo p {
+    color: white;
+    padding: 2px;
+    font-size: 16px;
+    font-weight: 250;
+}
+
+.painel-informativo b {
+    font-family: GoodOldDos;
+    color: white;
+    padding: 5px;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+/* Info page grid layout */
+.info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.8fr;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:
+        "basicas  interesses"
+        "fisica   interesses"
+        "contato  presencas"
+        "foto     .";
+    column-gap: 18px;
+    row-gap: 12px;
+    padding: 15px;
+}
+
+.informacoes-basicas {
+    grid-area: basicas;
+    color: white;
+    font-family: GoodOldDos;
+    text-shadow: #74FFFD 1px 0 10px;
+    background-color: rgba(33, 124, 47, 0.7);
+    padding: 8px;
+}
+
+.titulo-informacoes-basicas {
+    height: 15%;
+}
+
+.interesses {
+    grid-area: interesses;
+    color: white;
+    font-family: GoodOldDos;
+    text-shadow: #74FFFD 1px 0 10px;
+    background-color: rgba(33, 124, 47, 0.7);
+    padding: 8px;
+}
+
+.interesses li {
+    list-style: inside;
+    color: white;
+}
+
+.interesses dt {
+    color: white;
+}
+
+.interesses dd {
+    color: white;
+}
+
+.descricao-fisica {
+    grid-area: fisica;
+    color: white;
+    font-family: GoodOldDos;
+    text-shadow: #74FFFD 1px 0 10px;
+    background-color: rgba(33, 124, 47, 0.7);
+    padding: 8px;
+}
+
+.contato {
+    grid-area: contato;
+    color: white;
+    font-family: GoodOldDos;
+    text-shadow: #74FFFD 1px 0 10px;
+    background-color: rgba(33, 124, 47, 0.7);
+    padding: 8px;
+}
+
+.presencas-virtuais {
+    grid-area: presencas;
+    color: white;
+    font-family: GoodOldDos;
+    text-shadow: #74FFFD 1px 0 10px;
+    background-color: rgba(33, 124, 47, 0.7);
+    padding: 8px;
+}
+
+.presencas-virtuais li {
+    list-style: inside;
+    color: white;
+}
+
+.foto {
+    grid-area: foto;
+    color: white;
+    font-family: GoodOldDos;
+    text-shadow: #74FFFD 1px 0 10px;
+    background-color: rgba(33, 124, 47, 0.7);
+    padding: 4px;
+    width: fit-content;
+}
+
+.foto hr {
+    margin: 0;
+}
+
+.foto img {
+    width: 285px;
+    height: 200px;
+    display: block;
+}
+
+.painel-informativo a {
+    color: #74FFFD;
+}
+
+.painel-informativo a:hover {
+    color: #f2f300;
+    background-color: #029200;
+    padding: 2px;
+}
+
+/* ==========================================================
+   PAGE-SPECIFIC: WEBRING
+   ========================================================== */
+.page-webring {
+    background-image: url(../ss1.gif);
+}
+
+.page-webring .info {
+    margin: 25px;
+    padding-left: 3px;
+    padding-right: 5px;
+    position: relative;
+    display: inline-block;
+    border: 1px solid #f2f300;
+    border-radius: 8px;
+}
+
+.page-webring div {
+    aspect-ratio: 1;
+}
+
+.img-circle {
+    --d: 6.5em;
+    --rel: 1;
+    --ba: 1turn / var(--m);
+    --r: calc(.5 * (1 + var(--rel)) * var(--d) / tan(.5 * var(--ba)));
+    display: grid;
+    width: calc(2 * var(--r) + var(--d));
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.img-circle a {
+    text-decoration: none;
+    grid-area: 1/ 1;
+    place-self: center;
+    width: var(--d);
+    --ca: calc(var(--i) * var(--ba));
+    transform:
+        rotate(var(--ca))
+        translate(var(--r))
+        rotate(calc(-1 * var(--ca)));
+}
+
+.img-circle img {
+    max-width: 100%;
+}
+
+.internal-circle {
+    font-size: 100px;
+}
+
+/* ==========================================================
+   MEDIA QUERIES — RESPONSIVIDADE MOBILE
+   ========================================================== */
+@media screen and (max-width: 768px) {
+    /* --- Landing page --- */
+    .page-landing .titulo h1 {
+        font-size: 50px;
+    }
+
+    .outer-outer-circle {
+        width: 280px;
+        height: 280px;
+    }
+
+    .outer-circle {
+        width: 270px;
+        height: 270px;
+    }
+
+    .inner-circle {
+        width: 240px;
+        height: 240px;
+    }
+
+    .inner-line {
+        width: 220px;
+        height: 220px;
+    }
+
+    .inner-inner-circle {
+        width: 219px;
+        height: 219px;
+        margin-top: 60px;
+    }
+
+    .fakelogin {
+        margin-left: 15px;
+        margin-right: 15px;
+        margin-top: 50px;
+        padding-top: 8px;
+        padding-bottom: 10px;
+    }
+
+    .fakelogin input[type="text"],
+    .fakelogin input[type="password"] {
+        width: 80px;
+        font-size: 13px;
+    }
+
+    .fakelogin label {
+        font-size: 13px;
+    }
+
+    .fakelogin button {
+        font-size: 13px;
+    }
+
+    .boasvindas p {
+        font-size: 13px;
+    }
+
+    .page-landing footer {
+        padding-top: 30px;
+    }
+
+    .page-landing footer i {
+        font-size: 16px;
+    }
+
+    /* --- Cabeçalho comum --- */
+    .cabecalho {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .titulo {
+        margin-bottom: 10px;
+    }
+
+    .subtitulo {
+        width: 100%;
+    }
+
+    .subtitulo p {
+        margin-right: 10px;
+        margin-left: 10px;
+        font-size: 13px;
+    }
+
+    /* --- Navbar (home) --- */
+    .navbar {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    .navbar a {
+        margin-right: 5px;
+        margin-left: 5px;
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    /* --- Painel lateral --- */
+    .painel-topo-direita {
+        position: static;
+        width: 90%;
+        height: auto;
+        margin: 10px auto;
+        border-left: 10px dashed #f2f300;
+        border-right: 10px dashed #f2f300;
+    }
+
+    .panel-img {
+        width: 100%;
+        max-width: 186px;
+        margin: 5px auto;
+    }
+
+    /* --- Painel principal (logs/galeria) --- */
+    .painel-principal {
+        margin-right: 2%;
+        margin-left: 2%;
+        min-height: unset;
+        padding-bottom: 15px;
+    }
+
+    .painel-principal h1 {
+        font-size: 24px;
+    }
+
+    .painel-principal p {
+        font-size: 16px;
+    }
+
+    .painel-principal li {
+        font-size: 16px;
+    }
+
+    .painel-principal a {
+        font-size: 16px;
+    }
+
+    /* --- Painel introdutório (home) --- */
+    .page-home .painel-introdutorio {
+        margin-right: 2%;
+        margin-left: 2%;
+        height: auto;
+        min-height: unset;
+        padding-bottom: 15px;
+    }
+
+    .page-home .painel-introdutorio h2 {
+        font-size: 22px;
+    }
+
+    .page-home .painel-introdutorio i {
+        font-size: 22px;
+    }
+
+    .page-home .painel-introdutorio sub {
+        font-size: 13px;
+    }
+
+    /* --- Webring (home) --- */
+    .webring {
+        position: static;
+        width: 100%;
+        height: auto;
+        text-align: center;
+        margin: 20px auto;
+    }
+
+    .webring-gif {
+        margin: 0 auto;
+        width: 140px;
+    }
+
+    .webring h2 {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    /* --- Info page --- */
+    .painel-informativo {
+        margin-right: 2%;
+        margin-left: 2%;
+    }
+
+    .painel-informativo h2 {
+        font-size: 22px;
+    }
+
+    .painel-informativo i {
+        font-size: 22px;
+    }
+
+    .info-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .informacoes-basicas,
+    .interesses,
+    .descricao-fisica,
+    .contato,
+    .presencas-virtuais,
+    .foto {
+        width: auto;
+        padding: 10px;
+    }
+
+    .interesses dd {
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+
+    .painel-informativo p {
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+
+    .contato a {
+        word-break: break-all;
+    }
+
+    .foto {
+        text-align: center;
+        width: auto;
+    }
+
+    .foto img {
+        width: 100%;
+        max-width: 285px;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    /* --- Galeria --- */
+    .galeria {
+        width: 150px;
+        height: 80px;
+    }
+
+    .galeria span {
+        transform: rotateY(calc(var(--i) * 63deg)) translateZ(200px);
+    }
+
+    /* --- Webring page --- */
+    .img-circle {
+        --d: 4.5em;
+        --rel: 0.8;
+        position: relative;
+        margin: 20px auto;
+    }
+
+    .internal-circle {
+        font-size: 60px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    /* --- Landing --- */
+    .page-landing .titulo h1 {
+        font-size: 38px;
+    }
+
+    .outer-outer-circle {
+        width: 240px;
+        height: 240px;
+    }
+
+    .outer-circle {
+        width: 230px;
+        height: 230px;
+    }
+
+    .inner-circle {
+        width: 200px;
+        height: 200px;
+    }
+
+    .inner-line {
+        width: 180px;
+        height: 180px;
+    }
+
+    .inner-inner-circle {
+        width: 179px;
+        height: 179px;
+        margin-top: 40px;
+    }
+
+    .fakelogin {
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 35px;
+    }
+
+    /* --- Navbar --- */
+    .navbar a {
+        margin-right: 3px;
+        margin-left: 3px;
+        padding: 6px;
+        font-size: 13px;
+    }
+
+    /* --- Home --- */
+    .page-home .painel-introdutorio h2 {
+        font-size: 18px;
+    }
+
+    .page-home .painel-introdutorio i {
+        font-size: 18px;
+    }
+
+    .page-home .painel-introdutorio p {
+        font-size: 15px;
+    }
+
+    /* --- Logs --- */
+    .painel-principal p {
+        font-size: 14px;
+    }
+
+    .painel-principal li {
+        font-size: 14px;
+    }
+
+    /* --- Info --- */
+    .painel-informativo h2 {
+        font-size: 18px;
+    }
+
+    .painel-informativo i {
+        font-size: 18px;
+    }
+
+    .painel-informativo p {
+        font-size: 14px;
+    }
+
+    .painel-informativo b {
+        font-size: 12px;
+    }
+
+    /* --- Galeria --- */
+    .galeria {
+        width: 120px;
+        height: 65px;
+    }
+
+    .galeria span {
+        transform: rotateY(calc(var(--i) * 63deg)) translateZ(150px);
+    }
+
+    /* --- Webring page --- */
+    .img-circle {
+        --d: 3.5em;
+        --rel: 0.6;
+    }
+
+    .internal-circle {
+        font-size: 45px;
+    }
+}
